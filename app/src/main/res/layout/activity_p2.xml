@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".p2"
+    android:background="@drawable/pla2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageButton
+            android:id="@+id/player1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            app:srcCompat="@drawable/player1" />
+
+        <ImageButton
+            android:id="@+id/player2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            app:srcCompat="@drawable/player2" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="422dp"
+            android:layout_height="412dp"
+            android:visibility="visible"
+            tools:layout_editor_absoluteY="328dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="339dp"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/firstButton"
+                    android:layout_width="263dp"
+                    android:layout_height="132dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/easy" />
+
+                <ImageButton
+                    android:id="@+id/secondButton"
+                    android:layout_width="244dp"
+                    android:layout_height="122dp"
+                    android:layout_marginLeft="-125dp"
+                    android:layout_marginTop="150dp"
+
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/hard" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
